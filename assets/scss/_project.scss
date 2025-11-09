@@ -1,0 +1,19 @@
+.project-gallery{
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 139px 139px 0px 0px;
+}
+.project-gallery-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 45px;
+    p{
+        font-size: 18px;
+        color: $white;
+        font-weight: 500;
+    }
+    @include breakpoint(max-md){
+        justify-content: center;
+    }
+}

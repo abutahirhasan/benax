@@ -1990,7 +1990,7 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #3D3D3D;
+  background-color: #3d3d3d;
   transition: all 0.3s;
   border-radius: 50%;
 }
@@ -2000,6 +2000,47 @@ span {
 }
 .social-media-style1 li a:hover {
   background-color: #2c2c2c;
+}
+
+.social-style2 {
+  display: flex;
+  align-items: center;
+  gap: 9px 33px;
+}
+.social-style2 li a {
+  gap: 13px;
+  display: flex;
+  align-items: center;
+}
+.social-style2 li a .cont {
+  font-size: 18px;
+  color: var(--white);
+}
+.social-style2 li a .cont .follow {
+  color: #B2B2B2;
+  font-style: 15px;
+  line-height: 10px;
+}
+.social-style2 li .icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.06);
+}
+.social-style2 li .icon i {
+  color: var(--white);
+}
+.social-style2 li:hover .icon {
+  background-color: #2c2c2c;
+}
+@media (max-width: 1199px) {
+  .social-style2 {
+    gap: 9px 20px;
+  }
 }
 
 .hero-1 {
@@ -2878,6 +2919,29 @@ span {
 @media (max-width: 1399px) {
   .team-section .right-shape {
     display: none;
+  }
+}
+
+.project-gallery {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 139px 139px 0px 0px;
+}
+
+.project-gallery-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 45px;
+}
+.project-gallery-head p {
+  font-size: 18px;
+  color: var(--white);
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .project-gallery-head {
+    justify-content: center;
   }
 }
 
