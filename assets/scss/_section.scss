@@ -101,3 +101,28 @@
 //>>>>> Basic Css End <<<<<//
 
 
+
+
+.video-box{
+	margin-bottom: -30px;	
+	source{
+		width: 100%;
+		height: 100%;
+	}
+}
+.section-bg-black{
+	background-color: $bg-color-2;
+}
+
+.section-padding-150{
+	padding: 150px 0;
+	@include breakpoint(max-xl){
+		padding: 120px 0;
+	}
+	@include breakpoint(max-lg){
+		padding: 100px 0;
+	}
+	@include breakpoint(max-md){
+		padding: 80px 0;
+	}
+}

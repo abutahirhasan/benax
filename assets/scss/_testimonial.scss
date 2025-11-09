@@ -1,59 +1,163 @@
 .testimonial-image-style-1 {
-    img {
-        @include imgw;
-    }
+	img {
+		@include imgw;
+	}
 }
 
 .testimonial-content-style-1 {
-    margin-left: 50px;
+	margin-left: 50px;
 
-    @include breakpoint (max-xxl) {
-        margin-left: 0;
-    }
+	@include breakpoint(max-xxl) {
+		margin-left: 0;
+	}
 
-    p {
-        color: $header-color;
-        font-size: 26px;
-        font-weight: 500;
-        margin-top: 10px;
-        font-family: $heading-font;
-        max-width: 646px;
-        line-height: 182%;
+	p {
+		color: $header-color;
+		font-size: 26px;
+		font-weight: 500;
+		margin-top: 10px;
+		font-family: $heading-font;
+		max-width: 646px;
+		line-height: 182%;
 
-        @include breakpoint (max-xxl) {
-            font-size: 16px;
-        }
-    }
+		@include breakpoint(max-xxl) {
+			font-size: 16px;
+		}
+	}
 
-    .info-item {
-        @include flex;
-        gap: 15px;
-        margin-top: 40px;
+	.info-item {
+		@include flex;
+		gap: 15px;
+		margin-top: 40px;
 
-        img {
-            border: 1px solid #91969C;
-            border-radius: 100px;
-        }
+		img {
+			border: 1px solid #91969c;
+			border-radius: 100px;
+		}
 
-        .content {
-            span {
-                color: #91969C;
-                font-weight: 500;
-            }
-        }
-    }
+		.content {
+			span {
+				color: #91969c;
+				font-weight: 500;
+			}
+		}
+	}
 }
 
-.testimonial-section {
-    position: relative;
+.testimonial-sections {
+	position: relative;
 
-    .left-shape {
-        position: absolute;
-        left: 120px;
-        top: 0;
+	.left-shape {
+		position: absolute;
+		left: 120px;
+		top: 0;
 
-        @include breakpoint (max-xxl) {
-            display: none;
-        }
+		@include breakpoint(max-xxl) {
+			display: none;
+		}
+	}
+}
+
+//Testimonial style new or benax
+.testimonial-slider01 {
+	margin-right: -180px;
+	@include breakpoint(max-md) {
+		margin-right: 0;
+	}
+}
+.s-title {
+	margin-bottom: 130px;
+    @include breakpoint(max-xxl){
+        margin-bottom: 80px;
     }
+    @include breakpoint(max-xl){
+        margin-bottom: 60px;
+    }
+    @include breakpoint(max-lg){
+        margin-bottom: 40px;
+    }
+}
+.testimonial-item-style-1 {
+	.time-year {
+		color: $theme-color;
+		font-size: 28px;
+		font-family: $heading-sub;
+		width: 100%;
+		position: relative;
+		border-bottom: 1px solid $white;
+		padding-bottom: 20px;
+		margin-bottom: 64px;
+		z-index: 1;
+		&::before {
+			position: absolute;
+			content: "";
+			width: 14px;
+			height: 13px;
+			background-color: $white;
+			clip-path: polygon(48% 100%, 0 0, 100% 0);
+			top: 100%;
+			inset-inline-start: 0;
+		}
+	}
+	.title {
+		font-size: 28px;
+		margin-bottom: 24px;
+	}
+	p {
+		color: $text-gray1;
+		font-size: 18px;
+		font-weight: 500;
+	}
+	.subs {
+		padding-top: 60px;
+	}
+	@include breakpoint(max-xl) {
+		.time-year {
+			font-size: 24px;
+			padding-bottom: 16px;
+			margin-bottom: 40px;
+			z-index: 1;
+		}
+		.title {
+			font-size: 24px;
+			margin-bottom: 16px;
+		}
+		p {
+			font-size: 15px;
+		}
+		.subs {
+			padding-top: 24px;
+		}
+	}
+}
+.cus-swiper-pagination{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 88px;
+    @include breakpoint(max-xl){
+        margin-top: 70px;
+    }
+    @include breakpoint(max-lg){
+        margin-top: 40px;
+    }
+    @include breakpoint(max-md){
+        margin-top: 30px;
+    }
+    @include breakpoint(max-sm){
+        margin-top: 22px;
+    }
+}
+.cus-swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgb(255, 255, 255, 0.18);
+  opacity: 1;
+  margin: 0 6px !important;
+  transition: all 0.3s ease;
+}
+
+.cus-swiper-pagination .swiper-pagination-bullet-active {
+  background: $white;
+  transform: scale(1.3);
 }

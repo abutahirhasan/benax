@@ -26,7 +26,7 @@ body {
     font-weight: 500;
     line-height: 31px;
     color: $text-color;
-    background-color: $white;
+    background-color: $bg-color-2;
 	padding: 0;
 	margin: 0;
 	overflow-x: hidden;
@@ -67,36 +67,44 @@ h6 {
 }
 
 h1 {
-	font-size: 80px;
-	font-weight: 900;
-	line-height: 100%;
+	font-size: 96px;
+	font-weight: 700;
+	line-height: 108px;
+	font-family: $heading-font;
 
 	@include breakpoint(max-xxxl){
-		font-size: 70px;
+		font-size: 85px;
+		line-height: 101px;
 	}
 
 	@include breakpoint(max-xxl){
-		font-size: 60px;
+		font-size: 74px;
+		line-height: 90px;
 	}
 
 	@include breakpoint(max-xl){
-		font-size: 55px;
+		font-size: 62px;
+		line-height: 80px;
 	}
 
 	@include breakpoint(max-lg){
-		font-size: 50px;
+		font-size: 48px;
+		line-height: 70px;
 	}
 
 	@include breakpoint(max-md){
-		font-size: 55px;
+		font-size: 46px;
+		line-height: 65px;
 	}
 
 	@include breakpoint(max-sm){
 		font-size: 43px;
+		line-height: 60px;
 	}
 
 	@include breakpoint(max-xxs){
 		font-size: 32px;
+		line-height: 50px;
 	}
 }
 
@@ -186,6 +194,7 @@ a {
 
 p {
     margin: 0px;
+	line-height: 18px;
 	@include transition;
 	@include breakpoint(max-xl){
 		font-size: 14px;

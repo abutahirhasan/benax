@@ -87,12 +87,13 @@
 			});
 
 			// Register GSAP Plugins
-			gsap.registerPlugin(
-				ScrollTrigger,
+			gsap
+				.registerPlugin
+				// ScrollTrigger,
 				// ScrollSmoother,
 				// CustomEase,
-				ScrollToPlugin
-			);
+				// ScrollToPlugin
+				();
 			// Smooth active
 			var device_width = window.screen.width;
 
@@ -291,6 +292,51 @@
 						},
 						0: {
 							slidesPerView: 1,
+						},
+					},
+				});
+			}
+
+			//New Slide add benax
+			//>> Testimonial Slider Start <<//
+			if ($(".testimonial-slider01").length > 0) {
+				const TestimonialSlider01 = new Swiper(".testimonial-slider01", {
+					spaceBetween: 0,
+					speed: 1300,
+					centeredSlides: true,
+					loop: true,
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+					pagination: {
+						el: ".cus-swiper-pagination",
+						clickable: true,
+						renderBullet: function (index, className) {
+							// Limit bullets to max 4
+							if (index < 4) {
+								return '<span class="' + className + '"></span>';
+							}
+							return ""; // don't render extra bullets
+						},
+					},
+
+					breakpoints: {
+						1199: {
+							slidesPerView: 5.2,
+						},
+						991: {
+							slidesPerView: 4.2,
+						},
+						767: {
+							slidesPerView: 3.2,
+						},
+						575: {
+							slidesPerView: 2.2,
+						},
+						0: {
+							slidesPerView: 1.1,
+							spaceBetween: 20,
 						},
 					},
 				});
