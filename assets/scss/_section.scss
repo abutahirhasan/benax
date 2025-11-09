@@ -1,0 +1,103 @@
+
+//>>>>> Section Title Start <<<<<//
+
+.section-title {
+	position: relative;
+	z-index: 99;
+	margin-bottom: 30px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	.sub-title {
+		font-size: 14px;
+		font-weight: 500;
+		color: $theme-color;
+		font-family: $body-font;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		display: inline-block;
+		position: relative;
+		padding-left: 20px;
+
+		&::before {
+			position: absolute;
+			content: "";
+			width: 6px;
+			height: 6px;
+			background-color: $theme-color;
+			left: 0;
+			top: 12px;
+		}
+	}
+}
+
+
+.section-title-area	{
+	@include flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 9;
+	margin-bottom: 30px;
+
+	.section-title-2 {
+		margin-bottom: 0;
+	}
+	
+	.section-title {
+		margin-bottom: 0;
+	}
+	
+	@include breakpoint (max-xl) {
+		flex-wrap: wrap;
+		// justify-content: center;
+		// text-align: center;
+		gap: 30px;
+	}
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+}
+//>>>>> Section Title End <<<<<//
+
+//>>>>> Basic Css Start <<<<<//
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.section-bg {
+	background-color: $bg-color-2;
+}
+
+.bg-color-3 {
+	background-color: $bg-color-3;
+}
+
+.theme-bg {
+	background-color: $theme-color;
+}
+
+
+
+.section-padding {
+	padding: 120px 0;
+
+	@include breakpoint(max-xl){
+		padding: 100px 0;
+	}
+
+	@include breakpoint(max-lg){
+		padding: 80px 0;
+	}
+}
+
+.contact-bg {
+	background: #F4F5EC;
+}
+//>>>>> Basic Css End <<<<<//
+
+

@@ -1,0 +1,69 @@
+.team-card-item {
+    margin-top: 30px;
+
+    .team-image {
+        position: relative;
+
+        img {
+            @include imgw;
+        }
+
+
+        .icon {
+            position: absolute;
+            right: 20px;
+            bottom: -30px;
+            width: 50px;
+            height: 51px;
+            line-height: 50px;
+            text-align: center;
+            color: $white;
+            background-color: $theme-color;
+        }
+    }
+
+    .team-content {
+        margin-top: 20px;
+
+         h5 {
+            line-height: 150%;
+
+          a {
+              background-position: 0 95%;
+              background-repeat: no-repeat;
+              background-size: 0% 2px;
+              display: inline;
+              
+              &:hover {
+                  color: $theme-color;
+                  background-size: 100% 2px;
+                  background-image: linear-gradient(180deg, $theme-color 0%, $theme-color 100%);
+              }
+          }
+       }
+    }
+}
+
+.team-section {
+    position: relative;
+
+    .left-shape {
+        position: absolute;
+        top: 0;
+        left: 50px;
+
+        @include breakpoint (max-xxl) {
+            display: none;
+        }
+    }
+
+    .right-shape {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        @include breakpoint (max-xxl) {
+            display: none;
+        }
+    }
+}

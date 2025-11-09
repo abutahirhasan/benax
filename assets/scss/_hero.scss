@@ -1,0 +1,115 @@
+.hero-1 {
+    background-color: $header-color;
+
+    .container-fluid {
+        padding: 0 140px;
+
+        @include breakpoint (max-xl4) {
+           padding: 0 70px;
+        }
+
+         @include breakpoint (max-xxxl) {
+           padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl) {
+           padding: 0 30px;
+        }
+
+        @include breakpoint (max-sm) {
+           padding: 0 15px;
+        }
+    }
+
+    .hero-content {
+        padding-top: 170px;
+        padding-bottom: 56px;
+        position: relative;
+
+        h1 {
+            color: $white;
+            text-transform: uppercase;
+            margin-bottom: 55px;
+        }
+
+        .hero-bottom {
+            @include flex;
+            gap: 110px;
+            margin-top: 180px;
+
+            .circle-image {
+                position: relative;
+
+                img {
+                    animation: spin 15s linear infinite;
+                }
+
+                h3 {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: $theme-color;
+                }
+            }
+
+            .content {
+                p {
+                    font-weight: 700;
+                    color: rgba(255, 255, 255, 0.66);
+                    text-transform: uppercase;
+                    display: inline-block;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+                    padding-bottom: 30px;
+                    margin-bottom: 18px;
+                }
+
+                .count-item {
+                    @include flex;
+                    gap: 22px;
+
+                    h2 {
+                        color: $white;
+                        font-size: 42px;
+                    }
+                }
+            }
+        }
+    }
+
+    .hero-image {
+        margin-right: -140px;
+        position: relative;
+
+        img  {
+            @include imgw;
+        }
+
+        .hero-box-item {
+            @include flex;
+            gap: 88px;
+            padding: 54px 65px 13px;
+            background-color: $white;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+
+            .icon-item {
+                @include flex;
+                gap: 14px;
+
+                .content {
+
+                    span {
+                        color: rgba(159, 159, 159, 1);
+                    }
+
+                    h5 {
+                        font-weight: 500;
+                        line-height: 190%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.theme-btn-main {
+  display: inline-flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+  transition: all 0.4s ease;
+  text-transform: capitalize;
+
+  &.style-2 {
+	background-color: $theme-color;
+	padding: 7px 30px;
+	padding-right: 7px;
+
+	.theme-btn-arrow-left,
+	.theme-btn-arrow-right {
+		width: 43px;
+		height: 43px;
+		background: $white;
+		color: $theme-color;
+	}
+
+	.theme-btn {
+		background-color: transparent;
+		padding: 0;
+		margin-right: 17px;
+		font-weight: 600;
+	}
+
+	&:hover {
+		padding-right: 30px;
+		padding-left: 9px;
+
+		.theme-btn {
+			background-color: transparent;
+		}
+
+		.theme-btn-arrow-left {
+			left: 5px;
+		}
+	}
+  }
+  
+ 
+  &:hover {
+    .theme-btn-arrow-left {
+      scale: 1;
+    }
+
+    .theme-btn-arrow-right {
+      scale: 0;
+    }
+
+    .theme-btn {
+      transform: translateX(56px);
+    }
+  }
+
+  .theme-btn-arrow-left,
+  .theme-btn-arrow-right {
+    width: 53px;
+    height: 53px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $theme-color;
+    color: $white;
+    transition: 0.4s;
+    text-align: center;
+
+	@include breakpoint (max-sm){
+		width: 48px;
+		height: 48px;
+	}
+  }
+
+  .theme-btn-arrow-left {
+    scale: 0;
+    position: absolute;
+    left: 3px;
+  }
+
+  .theme-btn {
+    background: $theme-color;
+    color: $white;
+    font-weight: 600;
+    font-size: 16px;
+	padding: 13px 30px;
+    display: inline-flex;
+	font-family: "Barlow", sans-serif;
+    align-items: center;
+    gap: 30px;
+    transition: 0.4s;
+
+	@include breakpoint (max-sm){
+		font-size: 14px;
+    	padding: 10px 25px;
+	}
+  }
+
+  &:hover {
+	.theme-btn {
+		background-color: $header-color;
+	}
+
+	.theme-btn-arrow-left,
+  	.theme-btn-arrow-right {
+		background-color: $white;
+	}
+  }
+}
+
+.cmn__btn {
+  background-color: $theme-color;
+  color: $white;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 500;
+  padding: 21px 34px;
+  border-radius: 6px;
+  transition: background-color 0.4s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #f36a3b 0%, #b52600 100%);
+  }
+
+  &:active {
+    transform: translateY(0); 
+  }
+}

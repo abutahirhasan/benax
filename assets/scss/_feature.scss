@@ -1,0 +1,110 @@
+.video-wrapper {
+    padding: 250px 0;
+    text-align: center;
+
+	@include breakpoint (max-xl) {
+		padding: 150px 0;
+	}
+
+	@include breakpoint (max-lg) {
+		padding: 120px 0;
+	}
+
+     .video-btn {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        display: inline-block;
+        background: $white;
+        color: $theme-color;
+        text-align: center;
+        border-radius: 100%;
+        font-size: 25px;
+        position: relative;
+
+        @include breakpoint (max-xxl) {
+            width: 90px;
+            height: 90px;
+            line-height: 90px;
+        }
+
+        &::before {
+            @include before;
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.24);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 100px;
+
+            @include breakpoint (max-xxl) {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 174px;
+            height: 174px;
+            background-color: rgba(255, 255, 255, 0.24);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 100px;
+
+            @include breakpoint (max-xxl) {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+}
+
+
+.counter-wrapper {
+    @include flex;
+    justify-content: space-between;
+
+    @include breakpoint (max-xxl) {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .counter-item  {
+        .icon {
+            margin-bottom: 20px;
+        }
+
+        .content {
+            h2 {
+                font-size: 46px;
+                font-weight: 700;
+
+                @include breakpoint (max-xxl) {
+                    font-size: 30px;
+                }
+            }
+
+            p {
+                color: #687799;
+                font-size: 20px;
+                font-weight: 500;
+
+                 @include breakpoint (max-xxl) {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &:hover {
+            .icon {
+                img {
+                    animation: jello 1s;
+                }
+            }
+        }
+    }
+}
