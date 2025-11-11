@@ -1,19 +1,131 @@
-.project-gallery{
-    background: rgba(255, 255, 255, 0.06);
-    border-radius: 139px 139px 0px 0px;
+.project-gallery {
+	background: rgba(255, 255, 255, 0.06);
+	border-radius: 139px 139px 0px 0px;
 }
-.project-gallery-head{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    margin-bottom: 45px;
-    p{
-        font-size: 18px;
-        color: $white;
-        font-weight: 500;
-    }
-    @include breakpoint(max-md){
-        justify-content: center;
-    }
+.project-gallery-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	margin-bottom: 45px;
+	p {
+		font-size: 18px;
+		color: $white;
+		font-weight: 500;
+	}
+	@include breakpoint(max-md) {
+		justify-content: center;
+	}
+}
+.project-card-item {
+	.thumb {
+		border-radius: 30px;
+		margin-bottom: 45px;
+		img {
+			border-radius: 30px;
+			transition: all 0.4s;
+		}
+	}
+	.content {
+		h3 {
+			a {
+				font-size: 36px;
+				color: $white;
+				line-height: 46px;
+			}
+		}
+		.tag-project {
+			margin-bottom: 18px;
+			li {
+				a {
+					display: inline-block;
+					color: $white;
+					border: 1px solid rgb(255, 255, 255, 0.36);
+					border-radius: 100px;
+					padding: 10px 22px;
+					font-weight: 700;
+					line-height: 25px;
+					font-size: 15px;
+					transition: all 0.4s;
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+	&:hover {
+		.thumb {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.thumb {
+			margin-bottom: 30px;
+		}
+		.content {
+			h3 {
+				a {
+					font-size: 29px;
+					line-height: 39px;
+				}
+			}
+			.tag-project {
+				margin-bottom: 16px;
+				li {
+					a {
+						display: inline-block;
+						color: $white;
+						border: 1px solid rgb(255, 255, 255, 0.36);
+						border-radius: 100px;
+						padding: 8px 22px;
+						font-weight: 700;
+						line-height: 25px;
+						font-size: 15px;
+						transition: all 0.4s;
+						&:hover {
+							background-color: $theme-color;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.thumb {
+			margin-bottom: 22px;
+		}
+		.content {
+			h3 {
+				a {
+					font-size: 24px;
+					line-height: 39px;
+				}
+			}
+			.tag-project {
+				margin-bottom: 14px;
+				li {
+					a {
+						display: inline-block;
+						color: $white;
+						border: 1px solid rgb(255, 255, 255, 0.36);
+						border-radius: 100px;
+						padding: 5px 22px;
+						font-weight: 700;
+						line-height: 25px;
+						font-size: 15px;
+						transition: all 0.4s;
+						&:hover {
+							background-color: $theme-color;
+							color: $white;
+						}
+					}
+				}
+			}
+		}
+	}
 }

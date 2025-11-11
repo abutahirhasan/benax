@@ -87,33 +87,33 @@
 			});
 
 			// Register GSAP Plugins
-			gsap
-				.registerPlugin
+			// gsap
+				// .registerPlugin
 				// ScrollTrigger,
 				// ScrollSmoother,
 				// CustomEase,
 				// ScrollToPlugin
-				();
+				// ();
 			// Smooth active
-			var device_width = window.screen.width;
+			// var device_width = window.screen.width;
 
-			if (device_width > 767) {
-				if (
-					document
-						.querySelector("#has_smooth")
-						.classList.contains("has-smooth")
-				) {
-					const smoother = ScrollSmoother.create({
-						smooth: 0.9,
-						effects: device_width < 1025 ? false : true,
-						smoothTouch: 0.1,
-						normalizeScroll: {
-							allowNestedScroll: true,
-						},
-						ignoreMobileResize: true,
-					});
-				}
-			}
+			// if (device_width > 767) {
+			// 	if (
+			// 		document
+			// 			.querySelector("#has_smooth")
+			// 			.classList.contains("has-smooth")
+			// 	) {
+			// 		const smoother = ScrollSmoother.create({
+			// 			smooth: 0.9,
+			// 			effects: device_width < 1025 ? false : true,
+			// 			smoothTouch: 0.1,
+			// 			normalizeScroll: {
+			// 				allowNestedScroll: true,
+			// 			},
+			// 			ignoreMobileResize: true,
+			// 		});
+			// 	}
+			// }
 
 			/* ================================
        Video & Image Popup Js Start
