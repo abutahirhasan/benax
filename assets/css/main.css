@@ -2859,6 +2859,185 @@ span {
   }
 }
 
+.service-title {
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 108px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  position: relative;
+  max-width: 855px;
+  margin: 0 auto 60px;
+}
+.service-title .sticker-done {
+  position: absolute;
+  right: -70px;
+  top: 22%;
+}
+
+.service-head {
+  max-width: 1030px;
+  margin: 0 auto 140px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+.service-head p {
+  max-width: 530px;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--white);
+  margin-left: auto;
+}
+
+.service-quick-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.service-quick-wrap .service-quick-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 105px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+.service-quick-wrap .service-quick-item.ser-border-top {
+  border-top: 1px solid rgba(255, 255, 255, 0.21);
+}
+.service-quick-wrap .service-quick-item .hover-thumb {
+  max-width: 305px;
+  position: absolute;
+  top: 50%;
+  left: 64%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  transition: all 0.4s;
+  opacity: 0;
+}
+.service-quick-wrap .service-quick-item .hover-thumb img {
+  width: 100%;
+}
+.service-quick-wrap .service-quick-item .serial {
+  font-size: 18px;
+  color: var(--white);
+  width: 230px;
+}
+.service-quick-wrap .service-quick-item h2 {
+  width: 675px;
+  max-width: 675px;
+  font-size: 96px;
+  line-height: 108px;
+  color: rgba(255, 255, 255, 0.13);
+  font-weight: 700;
+}
+.service-quick-wrap .service-quick-item p {
+  max-width: 365px;
+  color: var(--white);
+  font-size: 18px;
+  line-height: 28px;
+  width: 365px;
+  margin-left: auto;
+}
+.service-quick-wrap .service-quick-item .shape-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.service-quick-wrap .service-quick-item .shape-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  opacity: 0;
+}
+.service-quick-wrap .service-quick-item:hover .hover-thumb,
+.service-quick-wrap .service-quick-item:hover .shape-top,
+.service-quick-wrap .service-quick-item:hover .shape-bottom {
+  opacity: 1;
+}
+
+@media (max-width: 1199px) {
+  .service-title {
+    font-size: 60px;
+    line-height: 70px;
+    letter-spacing: -0.02em;
+    max-width: 655px;
+    margin: 0 auto 24px;
+  }
+  .service-title .sticker-done {
+    position: absolute;
+    right: -70px;
+    top: 22%;
+  }
+  .service-head {
+    max-width: 1030px;
+    margin: 0 auto;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+  .service-head p {
+    max-width: 530px;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .service-title {
+    font-size: 44px;
+    line-height: 54px;
+    letter-spacing: -0.02em;
+    max-width: 655px;
+    margin: 0 auto 16px;
+  }
+  .service-title .sticker-done {
+    display: none;
+  }
+  .service-head {
+    max-width: 1030px;
+    margin: 0 auto;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+  .service-head p {
+    max-width: 530px;
+    font-size: 17px;
+    line-height: 28px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 575px) {
+  .service-title {
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -0.02em;
+    max-width: 655px;
+    margin: 0 auto 10px;
+  }
+  .service-title .sticker-done {
+    display: none;
+  }
+  .service-head {
+    max-width: 1030px;
+    margin: 0 auto;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+  }
+  .service-head p {
+    max-width: 530px;
+    font-size: 15px;
+    line-height: 22px;
+    margin: 0 auto;
+  }
+}
 .team-card-item {
   margin-top: 30px;
 }
