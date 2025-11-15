@@ -1,69 +1,56 @@
-.team-card-item {
-    margin-top: 30px;
-
-    .team-image {
-        position: relative;
-
-        img {
-            @include imgw;
-        }
-
-
-        .icon {
-            position: absolute;
-            right: 20px;
-            bottom: -30px;
-            width: 50px;
-            height: 51px;
-            line-height: 50px;
-            text-align: center;
-            color: $white;
-            background-color: $theme-color;
-        }
-    }
-
-    .team-content {
-        margin-top: 20px;
-
-         h5 {
-            line-height: 150%;
-
-          a {
-              background-position: 0 95%;
-              background-repeat: no-repeat;
-              background-size: 0% 2px;
-              display: inline;
-              
-              &:hover {
-                  color: $theme-color;
-                  background-size: 100% 2px;
-                  background-image: linear-gradient(180deg, $theme-color 0%, $theme-color 100%);
-              }
-          }
-       }
+//member-team-section
+.member-team-section{
+	background-color: #FCF7F3;
+    .container{
+        max-width: 1340px;
+        margin: 0 auto;
     }
 }
-
-.team-section {
-    position: relative;
-
-    .left-shape {
-        position: absolute;
-        top: 0;
-        left: 50px;
-
-        @include breakpoint (max-xxl) {
-            display: none;
+.team-header{
+    margin-bottom: 65px;
+    .text-head-left{
+        h2{
+            margin-bottom: 40px;
+            font-size: 85px;
+            text-transform: uppercase;
+            color: $black;
+            font-weight: 500;
         }
-    }
-
-    .right-shape {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-
-        @include breakpoint (max-xxl) {
-            display: none;
+        p{
+            font-size: 18px;
+            line-height: 26px;
+            color: #919191;
+            max-width: 470px;
+            margin-left: auto;
         }
     }
 }
+.member-wrapper{
+    max-width: 1720px;
+    margin: 0 auto;
+}
+.team-member-item{
+    .thumb{
+        margin-bottom: 40px;
+        img{
+            transition: all 0.4s;
+        }
+    }
+    &:hover{
+        .thumb{
+            img{
+                transform: scale(1.05);
+            }
+        }
+    }
+    &.secound{
+        margin-top: 94px;
+    }
+    &.three{
+        margin-top: 163px;
+    }
+    &.four{
+        margin-top: 70px;
+    }
+}
+//member-team-section

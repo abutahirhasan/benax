@@ -314,5 +314,79 @@
 			color: $white;
 		}
 	}
+	&.style-black{
+		background-color: $black;
+		color: $white;
+		transition: all 0.4s;
+		&:hover{
+			color: $white;
+		}
+	}
 }
 //workview-content
+
+
+//workview-head
+.world-globe{
+	position: absolute;
+	right: 100px;
+	top: -100px;
+}
+.workview-head{
+	margin-bottom: 130px;
+	.more-then{
+		max-width: 250px;
+		font-size: 20px;
+		line-height: 26px;
+		color: $white;
+	}
+	.l-text{
+		max-width: 670px;
+		font-size: 26px;
+		line-height: 30px;
+		color: $white;
+	}
+}
+.counter__item01{
+	.content{
+		h2,
+		.count{
+			font-size: 96px;
+			line-height: 110px;
+			font-weight: 700;
+			color: $white;
+			margin-bottom: 20px;
+		}
+		p{
+			font-size: 20px;
+			line-height: 22px;
+			color: $white;
+			font-weight: 500;
+		}
+	}
+	border-bottom: 1px solid rgb(255, 255, 255, 0.55);
+	padding-bottom: 33px;
+	.bore-dot{
+		display: flex;
+		align-items: center;
+		gap: 1;
+		position: relative;
+		padding-left: 10px;
+		&::before{
+			position: absolute;
+			left: 0;
+			content: "";
+			width: 4px;
+			height: 4px;
+			border-radius: 50%;
+			background-color: $white;
+		}
+	}
+}
+.globe-circle{
+	margin: 150px auto 0;
+	max-width: 666px;
+	text-align: center;
+}
+//workview-head
+
