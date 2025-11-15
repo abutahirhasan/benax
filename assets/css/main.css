@@ -3038,6 +3038,138 @@ span {
     margin: 0 auto;
   }
 }
+.workview-content .group-thumb {
+  max-width: 500px;
+  margin-left: auto;
+  margin-bottom: 240px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.workview-content .group-thumb .thumb {
+  max-width: 325px;
+}
+.workview-content .group-thumb .thumb img {
+  width: 100%;
+  border-radius: 14px 14px 0 14px;
+}
+.workview-content .group-thumb .icon {
+  width: 132px;
+  position: relative;
+  top: 145px;
+  height: 145px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0px 15px 15px 15px;
+}
+.workview-content p {
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--white);
+  margin-bottom: 50px;
+  max-width: 634px;
+}
+@media (max-width: 1199px) {
+  .workview-content .group-thumb {
+    max-width: 500px;
+    margin-left: auto;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .workview-content .group-thumb .thumb {
+    max-width: 255px;
+  }
+  .workview-content .group-thumb .thumb img {
+    width: 100%;
+    border-radius: 14px 14px 0 14px;
+  }
+  .workview-content .group-thumb .icon {
+    width: 100px;
+    position: relative;
+    top: 105px;
+    height: 105px;
+    border-radius: 0px 15px 15px 15px;
+  }
+  .workview-content p {
+    font-size: 19px;
+    line-height: 29px;
+    color: var(--white);
+    margin-bottom: 30px;
+    max-width: 634px;
+  }
+}
+@media (max-width: 991px) {
+  .workview-content .group-thumb {
+    max-width: 500px;
+    margin-left: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .workview-content .group-thumb .thumb {
+    max-width: 220px;
+  }
+  .workview-content .group-thumb .thumb img {
+    width: 100%;
+    border-radius: 14px 14px 0 14px;
+  }
+  .workview-content .group-thumb .icon {
+    width: 80px;
+    top: 80px;
+    height: 85px;
+  }
+  .workview-content .group-thumb .icon img {
+    width: 40px;
+  }
+  .workview-content p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 22px;
+    max-width: 634px;
+  }
+}
+@media (max-width: 991px) {
+  .workview-content .group-thumb {
+    max-width: 500px;
+    margin-left: auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .workview-content .group-thumb .thumb {
+    max-width: 220px;
+  }
+  .workview-content .group-thumb .thumb img {
+    width: 100%;
+    border-radius: 14px 14px 0 14px;
+  }
+  .workview-content .group-thumb .icon {
+    width: 80px;
+    top: 80px;
+    height: 85px;
+  }
+  .workview-content .group-thumb .icon img {
+    width: 40px;
+  }
+  .workview-content p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 22px;
+    max-width: 634px;
+  }
+}
+
+.cmn__btn.style-whie {
+  background-color: var(--white);
+  color: var(--black);
+  transition: all 0.4s;
+}
+.cmn__btn.style-whie:hover {
+  color: var(--white);
+}
+
 .team-card-item {
   margin-top: 30px;
 }
