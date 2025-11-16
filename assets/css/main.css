@@ -2157,6 +2157,41 @@ span {
   line-height: 190%;
 }
 
+.video-header {
+  margin-bottom: 65px;
+  display: flex;
+  justify-content: space-between;
+}
+.video-header .group-thumb {
+  max-width: 400px;
+  margin-bottom: 240px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.video-header .group-thumb .thumb {
+  max-width: 325px;
+}
+.video-header .group-thumb .thumb img {
+  width: 100%;
+  border-radius: 14px 14px 0 14px;
+}
+.video-header .group-thumb .icon {
+  width: 132px;
+  position: relative;
+  top: 145px;
+  height: 145px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0px 15px 15px 15px;
+}
+.video-header .video-cont {
+  max-width: 1150px;
+  color: var(--white);
+  font-size: 62px;
+  font-weight: 500;
+  line-height: 80px;
+}
+
 .mean-container a.meanmenu-reveal {
   display: none;
 }

@@ -1,115 +1,151 @@
 .hero-1 {
-    background-color: $header-color;
+	background-color: $header-color;
 
-    .container-fluid {
-        padding: 0 140px;
+	.container-fluid {
+		padding: 0 140px;
 
-        @include breakpoint (max-xl4) {
-           padding: 0 70px;
-        }
+		@include breakpoint(max-xl4) {
+			padding: 0 70px;
+		}
 
-         @include breakpoint (max-xxxl) {
-           padding: 0 50px;
-        }
+		@include breakpoint(max-xxxl) {
+			padding: 0 50px;
+		}
 
-        @include breakpoint (max-xxl) {
-           padding: 0 30px;
-        }
+		@include breakpoint(max-xxl) {
+			padding: 0 30px;
+		}
 
-        @include breakpoint (max-sm) {
-           padding: 0 15px;
-        }
-    }
+		@include breakpoint(max-sm) {
+			padding: 0 15px;
+		}
+	}
 
-    .hero-content {
-        padding-top: 170px;
-        padding-bottom: 56px;
-        position: relative;
+	.hero-content {
+		padding-top: 170px;
+		padding-bottom: 56px;
+		position: relative;
 
-        h1 {
-            color: $white;
-            text-transform: uppercase;
-            margin-bottom: 55px;
-        }
+		h1 {
+			color: $white;
+			text-transform: uppercase;
+			margin-bottom: 55px;
+		}
 
-        .hero-bottom {
-            @include flex;
-            gap: 110px;
-            margin-top: 180px;
+		.hero-bottom {
+			@include flex;
+			gap: 110px;
+			margin-top: 180px;
 
-            .circle-image {
-                position: relative;
+			.circle-image {
+				position: relative;
 
-                img {
-                    animation: spin 15s linear infinite;
-                }
+				img {
+					animation: spin 15s linear infinite;
+				}
 
-                h3 {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%,-50%);
-                    color: $theme-color;
-                }
-            }
+				h3 {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					color: $theme-color;
+				}
+			}
 
-            .content {
-                p {
-                    font-weight: 700;
-                    color: rgba(255, 255, 255, 0.66);
-                    text-transform: uppercase;
-                    display: inline-block;
-                    border-bottom: 1px solid rgba(255, 255, 255, 0.33);
-                    padding-bottom: 30px;
-                    margin-bottom: 18px;
-                }
+			.content {
+				p {
+					font-weight: 700;
+					color: rgba(255, 255, 255, 0.66);
+					text-transform: uppercase;
+					display: inline-block;
+					border-bottom: 1px solid rgba(255, 255, 255, 0.33);
+					padding-bottom: 30px;
+					margin-bottom: 18px;
+				}
 
-                .count-item {
-                    @include flex;
-                    gap: 22px;
+				.count-item {
+					@include flex;
+					gap: 22px;
 
-                    h2 {
-                        color: $white;
-                        font-size: 42px;
-                    }
-                }
-            }
-        }
-    }
+					h2 {
+						color: $white;
+						font-size: 42px;
+					}
+				}
+			}
+		}
+	}
 
-    .hero-image {
-        margin-right: -140px;
-        position: relative;
+	.hero-image {
+		margin-right: -140px;
+		position: relative;
 
-        img  {
-            @include imgw;
-        }
+		img {
+			@include imgw;
+		}
 
-        .hero-box-item {
-            @include flex;
-            gap: 88px;
-            padding: 54px 65px 13px;
-            background-color: $white;
-            position: absolute;
-            bottom: 0;
-            right: 0;
+		.hero-box-item {
+			@include flex;
+			gap: 88px;
+			padding: 54px 65px 13px;
+			background-color: $white;
+			position: absolute;
+			bottom: 0;
+			right: 0;
 
-            .icon-item {
-                @include flex;
-                gap: 14px;
+			.icon-item {
+				@include flex;
+				gap: 14px;
 
-                .content {
+				.content {
+					span {
+						color: rgba(159, 159, 159, 1);
+					}
 
-                    span {
-                        color: rgba(159, 159, 159, 1);
-                    }
+					h5 {
+						font-weight: 500;
+						line-height: 190%;
+					}
+				}
+			}
+		}
+	}
+}
 
-                    h5 {
-                        font-weight: 500;
-                        line-height: 190%;
-                    }
-                }
-            }
-        }
+//video-header
+.video-header {
+	margin-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+	.group-thumb {
+		max-width: 400px;
+		margin-bottom: 240px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-end;
+		.thumb {
+			max-width: 325px;
+			img {
+				width: 100%;
+				border-radius: 14px 14px 0 14px;
+			}
+		}
+		.icon {
+			width: 132px;
+			position: relative;
+			top: 145px;
+			height: 145px;
+			background: rgba(255, 255, 255, 0.08);
+			border-radius: 0px 15px 15px 15px;
+		}
+	}
+    .video-cont{
+        max-width: 1150px;
+        color: $white;
+        font-size: 62px;
+        font-weight: 500;
+        line-height: 80px;
     }
 }
+//video-header
