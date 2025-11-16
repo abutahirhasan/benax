@@ -9,6 +9,18 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 
+
+@font-face {
+    font-family: "ThunderFont";
+    src: url("../../assets/webfonts/Thunder-LC.ttf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.thunder-font {
+    font-family: "ThunderFont", sans-serif;
+}
+
 $heading-font: "Instrument Sans", sans-serif;
 
 $heading-sub: "Space Grotesk", sans-serif;

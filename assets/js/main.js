@@ -276,7 +276,10 @@
 						delay: 2000,
 						disableOnInteraction: false,
 					},
-
+					pagination: {
+						el: ".cuss-swiper-pagination",
+						clickable: true,
+					},
 					breakpoints: {
 						1199: {
 							slidesPerView: 1,
