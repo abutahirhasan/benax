@@ -129,3 +129,76 @@
 		}
 	}
 }
+
+//since-section
+.since-section {
+	.service-title {
+		margin: 0;
+		max-width: 1370px;
+		margin: 0 auto;
+		.sticker-thing {
+			position: absolute;
+			bottom: 170px;
+			right: 20px;
+		}
+	}
+	.circle-image {
+		background-color: #2c2c2c;
+		width: 203px;
+		height: 203px;
+		border-radius: 50%;
+		margin: -40px auto 0;
+		position: relative;
+		img {
+			animation: spin 15s linear infinite;
+		}
+		.arrow{
+			transform: rotate(-140deg);
+			color: $white;
+		}
+	}
+	.since-group1{
+		max-width: 1720px;
+		margin: -317px auto 0;
+		.thumb1{
+			max-width: 241px;
+		}
+		.thumb2{
+			max-width: 357px;
+			top: 61px;
+			position: relative;
+		}
+	}
+	.since-group2{
+		max-width: 1127px;
+		margin-left: 195px;
+		margin-top: -250px;
+		z-index: 2;
+		.thumb1{
+			max-width: 277px;
+		}
+		.thumb2{
+			max-width: 270px;
+			margin-top: 161px;
+		}
+	}
+	.since-group3{
+		max-width: 1650px;
+		margin: -200px auto 0;
+		.thumb1{
+			max-width: 346px;
+			margin-bottom: 44px;
+		}
+		.thumb2{
+			max-width: 417px;
+			padding-right: 30px;
+		}
+		.thumb3{
+			max-width: 394px;
+			margin-bottom: 74px;
+			position: relative;
+		}
+
+	}
+}
+//since-section
