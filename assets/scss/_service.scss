@@ -98,6 +98,60 @@
 			.shape-bottom {
 				opacity: 1;
 			}
+			h2 {
+				a {
+					color: $white;
+				}
+			}
+		}
+	}
+}
+@include breakpoint(max-xxl) {
+	.service-quick-wrap {
+		.service-quick-item {
+			display: flex;
+			justify-content: space-between;
+			padding: 80px 0;
+			.hover-thumb {
+				max-width: 305px;
+				top: 50%;
+				left: 64%;
+				transform: translate(-50%, -50%) rotate(-10deg);
+			}
+			.serial {
+				font-size: 18px;
+				color: $white;
+				width: 230px;
+			}
+			h2 {
+				width: 675px;
+				max-width: 675px;
+				font-size: 60px;
+				line-height: 70px;
+			}
+			p {
+				max-width: 365px;
+				font-size: 18px;
+				line-height: 28px;
+				width: 365px;
+				margin-left: auto;
+			}
+			.shape-top {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				transition: all 0.4s;
+				opacity: 0;
+			}
+			.shape-bottom {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: -1;
+				transition: all 0.4s;
+				opacity: 0;
+			}
 		}
 	}
 }
@@ -116,7 +170,7 @@
 	}
 	.service-head {
 		max-width: 1030px;
-		margin: 0 auto;
+		margin: 0 auto 60px;
 		gap: 12px;
 		justify-content: center;
 		text-align: center;
@@ -125,6 +179,56 @@
 			font-size: 18px;
 			line-height: 28px;
 			margin: 0 auto;
+		}
+	}
+	.service-quick-wrap {
+		.service-quick-item {
+			display: flex;
+			justify-content: space-between;
+			padding: 80px 0;
+			.hover-thumb {
+				max-width: 205px;
+				top: 50%;
+				left: 64%;
+				transform: translate(-50%, -50%) rotate(-10deg);
+			}
+			.serial {
+				font-size: 18px;
+				color: $white;
+				width: 230px;
+			}
+			h2 {
+				width: 675px;
+				max-width: 675px;
+				font-size: 40px;
+				line-height: 50px;
+				a{
+					font-size: 40px;
+				}
+			}
+			p {
+				max-width: 365px;
+				font-size: 18px;
+				line-height: 28px;
+				width: 365px;
+				margin-left: auto;
+			}
+			.shape-top {
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+				transition: all 0.4s;
+				opacity: 0;
+			}
+			.shape-bottom {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: -1;
+				transition: all 0.4s;
+				opacity: 0;
+			}
 		}
 	}
 }
@@ -141,7 +245,7 @@
 	}
 	.service-head {
 		max-width: 1030px;
-		margin: 0 auto;
+		margin: 0 auto 40px;
 		gap: 12px;
 		justify-content: center;
 		text-align: center;
@@ -166,7 +270,7 @@
 	}
 	.service-head {
 		max-width: 1030px;
-		margin: 0 auto;
+		margin: 0 auto 26px;
 		gap: 12px;
 		justify-content: center;
 		text-align: center;
@@ -262,7 +366,7 @@
 				width: 80px;
 				top: 80px;
 				height: 85px;
-				img{
+				img {
 					width: 40px;
 				}
 			}
@@ -292,7 +396,7 @@
 				width: 80px;
 				top: 80px;
 				height: 85px;
-				img{
+				img {
 					width: 40px;
 				}
 			}
@@ -314,50 +418,49 @@
 			color: $white;
 		}
 	}
-	&.style-black{
+	&.style-black {
 		background-color: $black;
 		color: $white;
 		transition: all 0.4s;
-		&:hover{
+		&:hover {
 			color: $white;
 		}
 	}
 }
 //workview-content
 
-
 //workview-head
-.world-globe{
+.world-globe {
 	position: absolute;
 	right: 100px;
 	top: -100px;
 }
-.workview-head{
+.workview-head {
 	margin-bottom: 130px;
-	.more-then{
+	.more-then {
 		max-width: 250px;
 		font-size: 20px;
 		line-height: 26px;
 		color: $white;
 	}
-	.l-text{
+	.l-text {
 		max-width: 670px;
 		font-size: 26px;
 		line-height: 30px;
 		color: $white;
 	}
 }
-.counter__item01{
-	.content{
+.counter__item01 {
+	.content {
 		h2,
-		.count{
+		.count {
 			font-size: 96px;
 			line-height: 110px;
 			font-weight: 700;
 			color: $white;
 			margin-bottom: 20px;
 		}
-		p{
+		p {
 			font-size: 20px;
 			line-height: 22px;
 			color: $white;
@@ -366,13 +469,13 @@
 	}
 	border-bottom: 1px solid rgb(255, 255, 255, 0.55);
 	padding-bottom: 33px;
-	.bore-dot{
+	.bore-dot {
 		display: flex;
 		align-items: center;
 		gap: 1;
 		position: relative;
 		padding-left: 10px;
-		&::before{
+		&::before {
 			position: absolute;
 			left: 0;
 			content: "";
@@ -383,10 +486,15 @@
 		}
 	}
 }
-.globe-circle{
+.globe-circle {
 	margin: 150px auto 0;
 	max-width: 666px;
 	text-align: center;
+	@include breakpoint(max-md) {
+		margin: 100px auto 0;
+		img {
+			width: 100%;
+		}
+	}
 }
 //workview-head
-

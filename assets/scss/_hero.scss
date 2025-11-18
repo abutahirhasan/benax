@@ -7,6 +7,7 @@
 	margin-bottom: 65px;
 	display: flex;
 	justify-content: space-between;
+	gap: 30px;
 	.group-thumb {
 		max-width: 400px;
 		margin-bottom: 240px;
@@ -35,6 +36,124 @@
 		font-size: 62px;
 		font-weight: 500;
 		line-height: 80px;
+	}
+	@media screen and (max-width: 1500px) {
+		.video-cont {
+			max-width: 950px;
+			font-size: 42px;
+			line-height: 50px;
+		}
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: 1299px) {
+		.group-thumb {
+			max-width: 300px;
+			width: 100%;
+		}
+		.video-cont {
+			max-width: 950px;
+			font-size: 42px;
+			line-height: 50px;
+		}
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: 1199px) {
+		.group-thumb {
+			max-width: 300px;
+			width: 100%;
+		}
+		.video-cont {
+			.cus-arrow {
+				width: 120px;
+				img {
+					width: 100%;
+				}
+			}
+			max-width: 950px;
+			font-size: 36px;
+			line-height: 42px;
+			span {
+				font-size: 36px;
+			}
+		}
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: 767px) {
+		flex-wrap: wrap;
+		.group-thumb {
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 0px;
+			justify-content: center;
+			.thumb {
+				max-width: 325px;
+				img {
+					width: 100%;
+					border-radius: 14px 14px 0 14px;
+				}
+			}
+			.icon {
+				width: 132px;
+				position: relative;
+				top: 0;
+				height: 145px;
+				left: 12px;
+				background: rgba(255, 255, 255, 0.08);
+				border-radius: 15px 15px 15px 0px;
+			}
+		}
+		.video-cont {
+			.cus-arrow {
+				width: 120px;
+				img {
+					width: 100%;
+				}
+			}
+			max-width: 950px;
+			font-size: 36px;
+			line-height: 42px;
+			text-align: center;
+			span {
+				font-size: 36px;
+			}
+		}
+		margin-bottom: 40px;
+	}
+	@media screen and (max-width: 550px) {
+		flex-wrap: wrap;
+		gap: 20px;
+		.group-thumb {
+			max-width: 100%;
+			width: 100%;
+			margin-bottom: 0px;
+			justify-content: center;
+			.thumb {
+				max-width: 325px;
+				img {
+					width: 100%;
+					border-radius: 14px 14px 0 14px;
+				}
+			}
+			.icon {
+				width: 132px;
+				position: relative;
+				top: 0;
+				height: 145px;
+				left: 12px;
+				background: rgba(255, 255, 255, 0.08);
+				border-radius: 15px 15px 15px 0px;
+			}
+		}
+		.video-cont {
+			max-width: 950px;
+			font-size: 28px;
+			line-height: 36px;
+			text-align: center;
+			span {
+				font-size: 28px;
+			}
+		}
+		margin-bottom: 40px;
 	}
 }
 //video-header
@@ -294,7 +413,7 @@
 				max-width: 245px;
 			}
 		}
-		.r-pragraph{
+		.r-pragraph {
 			text-align: center;
 			max-width: 500px;
 			margin: 0 auto;
