@@ -152,53 +152,230 @@
 		img {
 			animation: spin 15s linear infinite;
 		}
-		.arrow{
+		.arrow {
 			transform: rotate(-140deg);
 			color: $white;
 		}
 	}
-	.since-group1{
+	.since-group1 {
 		max-width: 1720px;
 		margin: -317px auto 0;
-		.thumb1{
+		.thumb1 {
 			max-width: 241px;
 		}
-		.thumb2{
+		.thumb2 {
 			max-width: 357px;
 			top: 61px;
 			position: relative;
 		}
 	}
-	.since-group2{
+	.since-group2 {
 		max-width: 1127px;
 		margin-left: 195px;
 		margin-top: -250px;
 		z-index: 2;
-		.thumb1{
+		.thumb1 {
 			max-width: 277px;
 		}
-		.thumb2{
+		.thumb2 {
 			max-width: 270px;
 			margin-top: 161px;
 		}
 	}
-	.since-group3{
+	.since-group3 {
 		max-width: 1650px;
 		margin: -200px auto 0;
-		.thumb1{
+		.thumb1 {
 			max-width: 346px;
 			margin-bottom: 44px;
 		}
-		.thumb2{
+		.thumb2 {
 			max-width: 417px;
 			padding-right: 30px;
 		}
-		.thumb3{
+		.thumb3 {
 			max-width: 394px;
 			margin-bottom: 74px;
 			position: relative;
 		}
-
+	}
+	@include breakpoint(max-xxl) {
+		.since-group1 {
+			max-width: 1720px;
+			margin: -317px auto 0;
+			.thumb1 {
+				max-width: 200px;
+			}
+			.thumb2 {
+				max-width: 290px;
+				top: 61px;
+				position: relative;
+			}
+		}
+		.since-group2 {
+			max-width: 1127px;
+			margin-left: 195px;
+			margin-top: -80px;
+			z-index: 2;
+			.thumb1 {
+				max-width: 200px;
+			}
+			.thumb2 {
+				max-width: 200px;
+				margin-top: 161px;
+			}
+		}
+		.since-group3 {
+			max-width: 1650px;
+			margin: -100px auto 0;
+			.thumb1 {
+				max-width: 300px;
+				margin-bottom: 44px;
+			}
+			.thumb2 {
+				max-width: 417px;
+				padding-right: 30px;
+			}
+			.thumb3 {
+				max-width: 300px;
+				margin-bottom: 74px;
+				position: relative;
+			}
+		}
+		.service-title {
+			font-size: 40px;
+			line-height: 50px;
+			text-align: center !important;
+			margin: 0 auto 50px !important;
+			span {
+				font-size: 40px;
+			}
+			.sticker-thing {
+				right: 350px !important;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.since-group1 {
+			max-width: 1720px;
+			margin: -0px auto 0;
+			.thumb1 {
+				max-width: 200px;
+			}
+			.thumb2 {
+				max-width: 290px;
+				top: 61px;
+				position: relative;
+			}
+		}
+		.since-group2 {
+			max-width: 1127px;
+			margin-left: 195px;
+			margin-top: -0px;
+			z-index: 2;
+			.thumb1 {
+				max-width: 200px;
+			}
+			.thumb2 {
+				max-width: 200px;
+				margin-top: 161px;
+			}
+		}
+		.since-group3 {
+			max-width: 1650px;
+			margin: -0px auto 0;
+			.thumb1 {
+				max-width: 210px;
+				margin-bottom: 44px;
+			}
+			.thumb2 {
+				max-width: 350px;
+				padding-right: 0px;
+				padding: 8px 12px;
+				img {
+					width: 100%;
+				}
+			}
+			.thumb3 {
+				max-width: 300px;
+				margin-bottom: 74px;
+				position: relative;
+			}
+		}
+		.service-title {
+			font-size: 32px;
+			line-height: 42px;
+			text-align: center !important;
+			margin: 0 auto 30px !important;
+			span {
+				font-size: 32px;
+			}
+			.sticker-thing {
+				right: 350px !important;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.since-group1 {
+			max-width: 1720px;
+			margin: -0px auto 0;
+			.thumb1 {
+				max-width: 200px;
+			}
+			.thumb2 {
+				max-width: 290px;
+				top: 61px;
+				position: relative;
+				padding: 1px 8px;
+			}
+		}
+		.since-group2 {
+			max-width: 1127px;
+			margin-left: 5px;
+			margin-top: -0px;
+			z-index: 2;
+			.thumb1 {
+				max-width: 200px;
+				padding: 1px 10px;
+			}
+			.thumb2 {
+				max-width: 200px;
+				margin-top: 161px;
+			}
+		}
+		.since-group3 {
+			max-width: 1650px;
+			margin: 16px auto 0;
+			.thumb1 {
+				max-width: 210px;
+				margin-bottom: 44px;
+			}
+			.thumb2 {
+				max-width: 350px;
+				padding-right: 0px;
+				padding: 8px 12px;
+				img {
+					width: 100%;
+				}
+			}
+			.thumb3 {
+				max-width: 300px;
+				margin-bottom: 74px;
+				position: relative;
+			}
+		}
+		.service-title {
+			font-size: 32px;
+			line-height: 42px;
+			text-align: center !important;
+			margin: 0 auto 30px !important;
+			span {
+				font-size: 32px;
+			}
+			.sticker-thing {
+				right: 350px !important;
+			}
+		}
 	}
 }
 //since-section

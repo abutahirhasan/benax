@@ -19,6 +19,56 @@
 		position: relative;
 		bottom: 150px;
 	}
+	@include breakpoint(max-xxl) {
+		gap: 50px;
+		.count-title {
+			font-size: 400px;
+			line-height: 400px;
+		}
+		.t-ttile-left {
+			bottom: 120px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		gap: 20px;
+		.count-title {
+			font-size: 290px;
+			line-height: 320px;
+			span{
+				font-size: 290px;
+			}
+		}
+		.t-ttile-left {
+			bottom: 120px;
+		}
+	}
+	@include breakpoint(max-md) {
+		gap: 20px;
+		.count-title {
+			font-size: 120px;
+			line-height: 150px;
+			span{
+				font-size: 120px;
+			}
+		}
+		.t-ttile-left {
+			bottom: 30px;
+		}
+	}
+	@include breakpoint(max-sm) {
+		gap: 14px;
+		.count-title {
+			font-size: 80px;
+			line-height: 90px;
+			span{
+				font-size: 80px;
+			}
+		}
+		.t-ttile-left {
+			bottom: 10px;
+			margin-bottom: 20px;
+		}
+	}
 }
 .testimonial-image-style-1 {
 	max-width: 307px;
@@ -52,10 +102,63 @@
 			color: #767676;
 		}
 	}
+	@include breakpoint(max-xl) {
+		gap: 20px;
+		h4 {
+			font-size: 28px;
+			line-height: 36px;
+			margin-bottom: 20px;
+			span{
+				font-size: 28px;
+			}
+		}
+		.content {
+			h6 {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			span {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.quote-i{
+			width: 40px;
+			height: 40px;
+		}
+		gap: 20px;
+		h4 {
+			font-size: 22px;
+			line-height: 30px;
+			margin-bottom: 16px;
+			span{
+				font-size: 22px;
+			}
+		}
+		.content {
+			h6 {
+				font-size: 16px;
+				line-height: 24px;
+			}
+			span {
+				font-size: 14px;
+				line-height: 20px;
+			}
+		}
+	}
+	@include breakpoint(max-sm){
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
 }
 .cuss-swiper-pagination {
 	margin-left: 160px;
 	margin-top: 30px;
+	@include breakpoint(max-sm) {
+		margin-left: 0px;
+	}
 }
 .cuss-swiper-pagination .swiper-pagination-bullet {
 	width: 12px;
@@ -224,6 +327,18 @@
 	color: $black;
 	margin-left: 100px;
 	margin-bottom: -120px;
+	@include breakpoint(max-lg) {
+		margin-left: 0px;
+		margin-bottom: -90px;
+	}
+	@include breakpoint(max-md) {
+		margin-left: 0px;
+		text-align: center;
+		font-size: 14px;
+		max-width: 250px;
+		margin: 0 auto 25px;
+		line-height: 22px;
+	}
 }
 .sponsor-shop-wrap1 {
 	.sponsor-shop-item {
@@ -245,6 +360,34 @@
 	border-bottom: 1px solid #c0c0c0;
 	&.style02 {
 		border-bottom: unset;
+	}
+	@include breakpoint(max-lg){
+		.sponsor-shop-item {
+			height: 120px;
+			img {
+				max-width: 80px;
+			}
+		}
+	}
+	@include breakpoint(max-md){
+		flex-wrap: wrap;
+		.sponsor-shop-item {
+			width: calc(100% / 4);
+			height: 100px;
+			img {
+				max-width: 70px;
+			}
+		}
+	}
+	@include breakpoint(max-sm){
+		flex-wrap: wrap;
+		.sponsor-shop-item {
+			width: calc(100% / 3);
+			height: 100px;
+			img {
+				max-width: 70px;
+			}
+		}
 	}
 }
 //trusted-shopper-section
