@@ -1,0 +1,110 @@
+//Blog Section
+.blog-right-sidebar {
+	background-color: #f6f8ef;
+	border-radius: 12px;
+	padding: 50px 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	.user-profile {
+		max-width: 238px;
+		margin: 0 auto;
+		.profile {
+			margin: 0 auto 40px;
+		}
+		.title {
+			margin-bottom: 10px;
+			a {
+				font-size: 26px;
+				color: $black;
+				font-weight: 600;
+			}
+		}
+		.designation {
+			color: #898989;
+			font-size: 14px;
+		}
+		.profile-cont {
+			margin-bottom: 37px;
+		}
+		.exprient-text {
+			margin-bottom: 28px;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 30px;
+			color: #4a4a4a;
+		}
+		.social-icon {
+			gap: 10px;
+			a {
+				width: 42px;
+				height: 42px;
+				border-radius: 50%;
+				background: $white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: #39404a;
+				&:hover {
+					background-color: $black;
+					color: $white;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	.bar-cmn-title {
+		font-size: 22px;
+		line-height: 26px;
+		color: $black;
+		margin-bottom: 21px;
+		font-weight: 600;
+	}
+	.category-point {
+		ul {
+			display: flex;
+			flex-direction: column;
+			gap: 12px;
+			.cate-item {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				background-color: $white;
+				padding: 12px 24px;
+				border-radius: 6px;
+				font-size: 18px;
+				font-weight: 500;
+				color: #4a4a4a;
+				transition: all 0.4s ease-in-out;
+				&:hover {
+					background-color: $theme-color;
+					color: $white;
+				}
+			}
+		}
+	}
+	.tag-point {
+		ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+			li {
+				a {
+					display: inline-block;
+					background-color: $white;
+					font-size: 15px;
+					line-height: 19px;
+					border-radius: 100px;
+					padding: 8px 19px;
+					color: #4a4a4a;
+					transition: all 0.4s ease-in-out;
+					&:hover {
+						background-color: $theme-color;
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+//Blog Section

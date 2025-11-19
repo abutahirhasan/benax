@@ -1,12 +1,12 @@
 .hero-section {
 	padding: 180px 0 0px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 160px 0 0px;
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 140px 0 0px;
 	}
-	@include breakpoint(max-sm){
+	@include breakpoint(max-sm) {
 		padding: 120px 0 0px;
 	}
 }
@@ -185,7 +185,7 @@
 		font-size: 96px;
 		line-height: 99px;
 		color: $white;
-		.theme-bg{
+		.theme-bg {
 			height: 70px;
 			width: 116px;
 			justify-content: center;
@@ -548,3 +548,119 @@
 		}
 	}
 }
+
+//breakcrumb-section
+.breakcrumb-section {
+	background: url(../../assets/img/inner-page/breadcrumb-bg.jpg) no-repeat
+		center center / cover;
+	padding: 265px 0 186px;
+	.container{
+		max-width: 1340px;
+		margin: 0 auto;
+	}
+	z-index: 1;
+	.bread-single {
+		position: absolute;
+		left: -20px;
+		bottom: 60px;
+		transform: rotate(15deg);
+		z-index: -1;
+	}
+	.breadcrumb-content {
+		.breacd-title {
+			font-size: 96px;
+			font-weight: 500;
+			text-align: center;
+			color: $white;
+			margin-top: 20px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		padding: 190px 0 150px;
+		.breadcrumb-content {
+			.breacd-title {
+				font-size: 70px;
+			}
+		}
+		.bread-single {
+			position: absolute;
+			left: -20px;
+			bottom: 60px;
+			max-width: 150px;
+			transform: rotate(15deg);
+			z-index: -1;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 150px 0 120px;
+		.breadcrumb-content {
+			.breacd-title {
+				font-size: 60px;
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 140px 0 100px;
+		.breadcrumb-content {
+			.breacd-title {
+				font-size: 50px;
+				margin-top: 16px;
+			}
+		}
+		.bread-single {
+			position: absolute;
+			left: -5px;
+			bottom: 60px;
+			max-width: 100px;
+			transform: rotate(15deg);
+			z-index: -1;
+		}
+	}
+	@include breakpoint(max-md) {
+		padding: 140px 0 100px;
+		.breadcrumb-content {
+			ul {
+				li {
+					font-size: 16px !important;
+				}
+			}
+			.breacd-title {
+				font-size: 40px;
+				margin-top: 12px;
+			}
+		}
+		.bread-single {
+			position: absolute;
+			left: -5px;
+			bottom: 60px;
+			max-width: 80px;
+			transform: rotate(15deg);
+			z-index: -1;
+		}
+	}
+	@include breakpoint(max-sm) {
+		padding: 120px 0 90px;
+		.breadcrumb-content {
+			ul {
+				li {
+					font-size: 15px !important;
+				}
+			}
+			.breacd-title {
+				font-size: 36px;
+				margin-top: 10px;
+			}
+		}
+		.bread-single {
+			position: absolute;
+			left: -5px;
+			bottom: 20px;
+			max-width: 60px;
+			transform: rotate(15deg);
+			z-index: -1;
+		}
+	}
+}
+//breakcrumb-section
+
+
