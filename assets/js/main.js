@@ -407,13 +407,13 @@
        Search Popup Toggle Js Start
     ================================ */
 
-			// if ($(".search-toggler").length) {
-			//     $(".search-toggler").on("click", function(e) {
-			//         e.preventDefault();
-			//         $(".search-popup").toggleClass("active");
-			//         $("body").toggleClass("locked");
-			//     });
-			// }
+			if ($(".search-toggler").length) {
+			    $(".search-toggler").on("click", function(e) {
+			        e.preventDefault();
+			        $(".search-popup").toggleClass("active");
+			        $("body").toggleClass("locked");
+			    });
+			}
 
 			/* ================================
        Smooth Scroller And Title Animation Js Start

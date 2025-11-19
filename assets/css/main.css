@@ -1609,7 +1609,7 @@ span {
   position: relative;
   list-style: none;
   display: inline-block;
-  margin-inline-end: 35px;
+  margin-inline-end: 22px;
 }
 .header-main .main-menu ul li:last-child {
   margin-inline-end: 0;
@@ -1798,6 +1798,9 @@ span {
   visibility: visible;
   margin-top: 0;
 }
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover .demo-button .cmn__btn:hover {
+  color: var(--white) !important;
+}
 .header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb:hover .homemenu-btn {
   opacity: 1;
   visibility: visible;
@@ -1829,14 +1832,6 @@ span {
   opacity: 1;
   transform: translateY(0px);
 }
-.header-main .header-right {
-  gap: 30px;
-}
-@media (max-width: 1399px) {
-  .header-main .header-right {
-    gap: 20px;
-  }
-}
 .header-main .sidebar__toggle {
   cursor: pointer;
   font-size: 20px;
@@ -1865,7 +1860,7 @@ span {
   font-size: 14px;
 }
 .header-4 .mean__menu-wrapper .main-menu ul li a:hover {
-  color: var(--theme-2dark) !important;
+  color: var(--theme) !important;
 }
 .header-4 .mean__menu-wrapper .main-menu ul li .submenu {
   background: var(--white);
@@ -1922,7 +1917,42 @@ span {
   transform: translateY(0px);
 }
 .header-4 .header-right {
-  gap: 15px;
+  gap: 22px;
+}
+.header-4 .header-right .search-toggler {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  color: var(--white);
+  transition: all 0.3s ease-in-out;
+}
+.header-4 .header-right .search-toggler:hover {
+  background: var(--theme);
+  color: var(--white);
+}
+@media (max-width: 1399px) {
+  .header-4 .header-right {
+    gap: 16px;
+  }
+  .header-4 .header-right .search-toggler {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.15);
+    color: var(--white);
+    transition: all 0.3s ease-in-out;
+  }
+  .header-4 .header-right .search-toggler:hover {
+    background: var(--theme);
+    color: var(--white);
+  }
 }
 @media (max-width: 575px) {
   .header-4 .header-right {
@@ -2086,7 +2116,7 @@ span {
   height: 50px;
   line-height: 50px;
   border-radius: 100px;
-  border: 1px solid #E6E8EB;
+  border: 1px solid #e6e8eb;
   background: transparent;
   text-align: center;
   font-size: 18px;
@@ -2768,6 +2798,11 @@ span {
 @media (max-width: 1199px) {
   .hero-section {
     padding: 140px 0 0px;
+  }
+}
+@media (max-width: 575px) {
+  .hero-section {
+    padding: 120px 0 0px;
   }
 }
 

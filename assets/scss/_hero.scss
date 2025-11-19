@@ -6,6 +6,9 @@
 	@include breakpoint(max-xl){
 		padding: 140px 0 0px;
 	}
+	@include breakpoint(max-sm){
+		padding: 120px 0 0px;
+	}
 }
 
 //video-header
