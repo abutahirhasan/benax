@@ -128,3 +128,26 @@
     transform: translateY(0); 
   }
 }
+
+
+.btn-theme-outline{
+  background-color: transparent;
+  color: $theme-color;
+  font-size: 16px;
+  line-height: 17px;
+  font-weight: 500;
+  padding: 17px 34px;
+  border: 1px solid $theme-color;
+  border-radius: 100px;
+  transition: background-color 0.4s ease, color 0.4s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: $theme-color;
+    color: $white;
+  }
+
+  &:active {
+    transform: translateY(0); 
+  }
+}
