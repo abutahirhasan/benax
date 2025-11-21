@@ -214,6 +214,44 @@
 			}
 		}
 	}
+	&.footer-style2{
+		background-color: #171717;
+		.footer-bottom{
+			border-top: 1px solid rgb(255, 255, 255, 22%);
+			background-color: #171717;
+		}
+		.form-style2{
+			margin-bottom: 19px;
+		}
+		.follow-area{
+			.wid-title{
+				margin-bottom: 28px !important;
+			}
+		}
+		.form-check{
+			margin-bottom: 45px;
+			.form-check-label{
+				font-size: 14px;
+				font-weight: 400;
+				color: $white;
+				opacity: 71%;
+			}
+			.form-check-input{
+				background-color: transparent;
+				border-color: #BFEB17 !important;
+			}
+		}
+		.footer-logo1{
+			margin-bottom: 50px;
+		}
+		.widget-link{
+			li{
+				a{
+					color: rgb(255, 255, 255, 77%);
+				}
+			}
+		}
+	}
 }
 .footer-top {
 	padding: 150px 0;
@@ -430,5 +468,28 @@
 		max-width: 100%;
 	}
 }
-
+.form-style2{
+	background-color: #2C2C2C;
+	padding: 5px;
+	border-radius: 7px;
+	input{
+		color: #868686;
+		font-size: 16px;
+		width: 100%;
+		padding: 7px 10px 7px 24px;
+		background-color: transparent;
+		border: unset;
+	}
+	button{
+		width: 45px;
+		height: 45px;
+		min-width: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #3F3F3F;
+		border-radius: 7px;
+		color: $white;
+	}
+}
 //Footer Section 01
