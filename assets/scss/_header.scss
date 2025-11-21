@@ -304,7 +304,34 @@
 	}
 }
 
+
 //>>>>> Header 01 Start <<<<<//
+.header-2{
+	margin-top: 30px;
+	.container{
+		max-width: 1720px !important;
+	}
+	.sidebar__toggle,
+	.search-toggler{
+		border: 1px solid $black;
+		width: 48px;
+		height: 48px;
+		color: $black !important;
+		background-color: transparent;
+		&:hover{
+			background-color: $black !important;
+			color: $white !important;
+		}
+		@include breakpoint(max-xxl){
+			width: 39px;
+			height: 39px;
+		}
+	}
+	@include breakpoint(max-xxl){
+		margin-top: 10px;
+	}
+}
+
 .header-4 {
 	position: absolute;
 	top: 0;
@@ -512,34 +539,16 @@
 	transition: all 0.9s;
 	-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
 	animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-
-	&.header-1 {
-		background-color: $header-color;
-		padding: 12px 0;
-	}
-
-	&.header-2 {
-		background-color: $white;
-		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	}
-
-	&.header-3 {
-		background-color: $white;
-		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	}
-
 	&.header-4 {
 		background-color: $black;
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	}
-
-	&.header-5 {
-		background-color: $theme-2-dark;
-
-		.header-main {
-			padding: 10px 0;
-		}
+	&.header-2{
+		margin-top: 0;
+		background-color: $white;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	}
+
 }
 
 //>>>>> Offcanvas Start <<<<<//
