@@ -580,6 +580,9 @@
 			background-color: $white;
 		}
 	}
+	&.counter__items02{
+		max-width: 390px;
+	}
 	@include breakpoint(max-xl) {
 		.content {
 			h2,
