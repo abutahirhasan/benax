@@ -580,8 +580,22 @@
 			background-color: $white;
 		}
 	}
-	&.counter__items02{
+	&.counter__items02 {
 		max-width: 390px;
+		position: relative;
+		z-index: 1;
+		padding-bottom: 0;
+		border: unset;
+		h2 {
+			line-height: 70px !important;
+			border-bottom: 1px solid #747474;
+			color: #8c8c8c;
+			margin-bottom: 30px !important;
+			span {
+				line-height: 70px !important;
+				color: #8c8c8c !important;
+			}
+		}
 	}
 	@include breakpoint(max-xl) {
 		.content {
@@ -631,7 +645,7 @@
 	background: rgba(255, 255, 255, 0.06);
 	border-radius: 20px;
 	transition: all 0.4s;
-	&:hover{
+	&:hover {
 		margin-left: 0 !important;
 	}
 	&.first {
@@ -713,12 +727,116 @@
 	}
 }
 
-
 //workview-section02
-.workview-section02{
-	.world-globe{
-		bottom: -200px;
+.workview-section02 {
+	.container {
+		max-width: 1694px;
+	}
+	.top-account {
+		padding-top: 280px;
+	}
+	.top-space {
+		margin-bottom: 80px;
+	}
+	z-index: -1;
+	.world-globe {
+		bottom: -160px;
 		top: initial;
+		width: 804px;
+	}
+	.workview-head {
+		.arrow-theme {
+			background-color: #bde917;
+			width: 42px;
+			height: 42px;
+		}
+		h2 {
+			font-weight: 500;
+			font-size: 86px;
+			line-height: 108px;
+			letter-spacing: -0.02em;
+			text-transform: uppercase;
+			margin-bottom: 45px;
+			color: $white;
+		}
+		.reviw-with-arrow {
+			gap: 20px;
+			margin-bottom: 26px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.workview-head {
+			.arrow-theme {
+				background-color: #bde917;
+				width: 42px;
+				height: 42px;
+			}
+			h2 {
+				font-size: 66px;
+				line-height: 88px;
+				margin-bottom: 45px;
+			}
+			.reviw-with-arrow {
+				gap: 20px;
+				margin-bottom: 26px;
+			}
+		}
+		.top-account {
+			padding-top: 20px;
+		}
+		.top-space {
+			margin-bottom: 10px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		.workview-head {
+			margin-bottom: 30px !important;
+			.arrow-theme {
+				background-color: #bde917;
+				width: 42px;
+				height: 42px;
+			}
+			h2 {
+				font-size: 38px;
+				line-height: 40px;
+				margin-bottom: 24px;
+			}
+			.reviw-with-arrow {
+				gap: 10px;
+				margin-bottom: 20px;
+			}
+		}
+		.top-account {
+			padding-top: 0px;
+		}
+		.top-space {
+			margin-bottom: 0px;
+		}
+	}
+	@include breakpoint(max-md) {
+		.workview-head {
+			margin-bottom: 10px !important;
+			.arrow-theme {
+				background-color: #bde917;
+				width: 42px;
+				height: 42px;
+			}
+			h2 {
+				font-size: 38px;
+				line-height: 40px;
+				margin-bottom: 24px;
+			}
+			.reviw-with-arrow {
+				gap: 10px;
+				margin-bottom: 20px;
+			}
+		}
+		.top-account {
+			padding-top: 0px;
+		}
+		.top-space {
+			margin-bottom: 0px;
+		}
 	}
 }
 //workview-section02
