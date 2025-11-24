@@ -304,30 +304,29 @@
 	}
 }
 
-
 //>>>>> Header 01 Start <<<<<//
-.header-2{
+.header-2 {
 	margin-top: 30px;
-	.container{
+	.container {
 		max-width: 1720px !important;
 	}
 	.sidebar__toggle,
-	.search-toggler{
+	.search-toggler {
 		border: 1px solid $black;
 		width: 48px;
 		height: 48px;
 		color: $black !important;
 		background-color: transparent;
-		&:hover{
+		&:hover {
 			background-color: $black !important;
 			color: $white !important;
 		}
-		@include breakpoint(max-xxl){
+		@include breakpoint(max-xxl) {
 			width: 39px;
 			height: 39px;
 		}
 	}
-	@include breakpoint(max-xxl){
+	@include breakpoint(max-xxl) {
 		margin-top: 10px;
 	}
 }
@@ -456,6 +455,12 @@
 			}
 		}
 	}
+	.sidebar__toggle {
+		i {
+			font-size: 34px;
+			color: $white;
+		}
+	}
 
 	.header-right {
 		gap: 22px;
@@ -543,12 +548,11 @@
 		background-color: $black;
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	}
-	&.header-2{
+	&.header-2 {
 		margin-top: 0;
 		background-color: $white;
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	}
-
 }
 
 //>>>>> Offcanvas Start <<<<<//

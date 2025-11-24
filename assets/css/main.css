@@ -2624,6 +2624,10 @@ span {
   opacity: 1;
   transform: translateY(0px);
 }
+.header-4 .sidebar__toggle i {
+  font-size: 34px;
+  color: var(--white);
+}
 .header-4 .header-right {
   gap: 22px;
 }
@@ -7307,6 +7311,11 @@ span {
   font-size: 18px;
   line-height: 30px;
   color: var(--black);
+}
+
+.workview-section02 .world-globe {
+  bottom: -200px;
+  top: initial;
 }
 
 .member-team-section {
