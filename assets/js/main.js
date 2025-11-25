@@ -88,12 +88,12 @@
 
 			// Register GSAP Plugins
 			// gsap
-				// .registerPlugin
-				// ScrollTrigger,
-				// ScrollSmoother,
-				// CustomEase,
-				// ScrollToPlugin
-				// ();
+			// .registerPlugin
+			// ScrollTrigger,
+			// ScrollSmoother,
+			// CustomEase,
+			// ScrollToPlugin
+			// ();
 			// Smooth active
 			// var device_width = window.screen.width;
 
@@ -300,6 +300,41 @@
 				});
 			}
 
+			//>> business-slide-wrap Start <<//
+			if ($(".business-slide-wrap").length > 0) {
+				const businessSlideWrap = new Swiper(".business-slide-wrap", {
+					spaceBetween: 20,
+					speed: 1300,
+					loop: true,
+					centeredSlides: true,
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+					pagination: {
+						el: ".cus-swiper-pagination3",
+						clickable: true,
+					},
+					breakpoints: {
+						1199: {
+							slidesPerView: 3.5,
+						},
+						991: {
+							slidesPerView: 2.9,
+						},
+						767: {
+							slidesPerView: 2.1,
+						},
+						575: {
+							slidesPerView: 1.8,
+						},
+						0: {
+							slidesPerView: 1,
+						},
+					},
+				});
+			}
+
 			//New Slide add benax
 			//>> Testimonial Slider Start <<//
 			if ($(".testimonial-slider01").length > 0) {
@@ -408,11 +443,11 @@
     ================================ */
 
 			if ($(".search-toggler").length) {
-			    $(".search-toggler").on("click", function(e) {
-			        e.preventDefault();
-			        $(".search-popup").toggleClass("active");
-			        $("body").toggleClass("locked");
-			    });
+				$(".search-toggler").on("click", function (e) {
+					e.preventDefault();
+					$(".search-popup").toggleClass("active");
+					$("body").toggleClass("locked");
+				});
 			}
 
 			/* ================================
