@@ -50,6 +50,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 :root {
   --body: #fff;
+  --body2: #F0F0F0;
   --black: #000;
   --black2: #222222;
   --black3: #171717;
@@ -2545,6 +2546,10 @@ span {
   }
 }
 
+.header-3 .header-main {
+  padding: 22px 0;
+}
+
 .header-4 {
   position: absolute;
   top: 0;
@@ -2716,6 +2721,11 @@ span {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .sticky.header-2 {
+  margin-top: 0;
+  background-color: var(--white);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.sticky.header-3 {
   margin-top: 0;
   background-color: var(--white);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -4585,6 +4595,11 @@ span {
     padding-left: 8px;
     padding-right: 8px;
   }
+}
+
+.hero-section-3 {
+  background-color: var(--body2);
+  padding: 120px 220px;
 }
 
 .mean-container a.meanmenu-reveal {

@@ -2,6 +2,7 @@
 :root {
     
     --body: #fff;
+    --body2: #F0F0F0;
     --black: #000;
     --black2: #222222;
     --black3: #171717;
@@ -24,6 +25,7 @@
 
 // Theme Color - Defualt Colors
 $black: var(--black);
+$body2: var(--body2);
 $black2: var(--black2);
 $bg-dark2: var(--bg-dark2);
 $bg-dark3: var(--bg-dark3);

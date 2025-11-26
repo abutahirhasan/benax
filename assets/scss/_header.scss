@@ -331,6 +331,13 @@
 	}
 }
 
+//>>>>> Header 03 <<<<<//
+.header-3{
+	.header-main{
+		padding: 22px 0;
+	}
+}
+
 .header-4 {
 	position: absolute;
 	top: 0;
@@ -549,6 +556,11 @@
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	}
 	&.header-2 {
+		margin-top: 0;
+		background-color: $white;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	}
+	&.header-3 {
 		margin-top: 0;
 		background-color: $white;
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
