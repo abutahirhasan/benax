@@ -1578,3 +1578,104 @@
 	}
 }
 //hero-section-3
+
+.body-bg2 {
+	background-color: $body2;
+}
+
+//Business Digital Section
+.digital-business-section {
+	.digital-business-title {
+		font-family: $heading-font;
+		max-width: 1070px;
+		margin: 0 auto 87px;
+		span {
+			font-size: 66px;
+			line-height: 84px;
+			font-weight: 700;
+			display: block;
+			text-transform: uppercase;
+			&:nth-child(3) {
+				margin-left: 80px;
+			}
+			&:nth-child(4) {
+				color: #9f9f9f;
+			}
+			&:nth-child(5) {
+				color: #9f9f9f;
+				margin-left: 220px;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.digital-business-title {
+			max-width: 750px;
+			margin: 0 auto 60px;
+			span {
+				font-size: 44px;
+				line-height: 54px;
+				display: block;
+				&:nth-child(3) {
+					margin-left: 80px;
+				}
+				&:nth-child(5) {
+					margin-left: 220px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.digital-business-title {
+			max-width: 650px;
+			margin: 0 auto 50px;
+			span {
+				font-size: 38px;
+				line-height: 48px;
+				display: block;
+				&:nth-child(3) {
+					margin-left: 80px;
+				}
+				&:nth-child(5) {
+					margin-left: 180px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.digital-business-title {
+			max-width: 550px;
+			margin: 0 auto 50px;
+			text-align: center !important;
+			span {
+				font-size: 29px;
+				line-height: 38px;
+				display: block;
+				&:nth-child(3) {
+					margin-left: 0px;
+				}
+				&:nth-child(5) {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.digital-business-title {
+			max-width: 550px;
+			margin: 0 auto 50px;
+			text-align: center !important;
+			span {
+				font-size: 22px;
+				line-height: 30px;
+				display: block;
+				&:nth-child(3) {
+					margin-left: 0px;
+				}
+				&:nth-child(5) {
+					margin-left: 0px;
+				}
+			}
+		}
+	}
+}
+//Business Digital Section
