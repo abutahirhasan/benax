@@ -163,7 +163,7 @@
     <div class="offcanvas__overlay"></div>
     
     <!-- Header Section Start -->
-    <header id="header-sticky" class="header-4 px-xxl-4 px-2 header-3">
+    <header id="header-sticky" class="header-4 header-3">
         <div class="container">
             <div class="mega-menu-wrapper">
                 <div class="header-main">
@@ -367,18 +367,18 @@
                                 </nav>
                             </div>
                         </div>
-                        <div class="header-right d-flex gap-xxl-3 gap-2 justify-content-end align-items-center">
-                            <div class="d-sm-block d-none">
-                                <a href="#" class="cmn__btn style-black d-inline-block rounded-pill wow fadeInDown"
-                                    data-wow-delay="0.5s">
-                                    Get Started
-                                </a>
-                            </div>
-                            <a href="#" class="main-header__search search-toggler">
+                        <div class="header-right d-flex gap-xxl-4 gap-3 justify-content-end align-items-center">                            
+                            <form action="#" class="form-style3 d-xl-flex d-none align-items-center gap-2">
+                                <input type="text" placeholder="Search">
+                                <button class="btn outline-0">
+                                    <i class="fa-regular fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <a href="#" class="main-header__search d-xl-none d-flex bg-black search-toggler">
                                 <i class="fa-regular fa-magnifying-glass"></i>
                             </a>
                             <div class="header__hamburger d-xl-block my-auto">
-                                <div class="sidebar__toggle d-center rounded-circle">
+                                <div class="sidebar__toggle fs-2 d-center rounded-circle">
                                     <i class="fas fa-bars"></i>
                                 </div>
                             </div>
@@ -409,29 +409,31 @@
     
     <!-- Hero-section Start -->
     <section class="hero-section-3 fix">
-        <div class="hero-wrapper-03 position-relative z-1">
-            <div class="hero-thumb-head">
-                <div class="thumb">
-                    <img src="assets/img/home-3/thumb1.png" alt="img" class="w-100">
+        <div class="container">        
+            <div class="hero-wrapper-03 position-relative z-1">
+                <div class="hero-thumb-head">
+                    <div class="thumb">
+                        <img src="assets/img/home-3/thumb1.png" alt="img" class="w-100 rounded-2">
+                    </div>
+                    <div class="thumb2">
+                        <img src="assets/img/home-3/thumb2.png" alt="img" class="w-100">
+                    </div>
+                    <div class="thumb3">
+                        <img src="assets/img/home-3/thumb3.jpg" alt="img" class="w-100 rounded-2">
+                    </div>
                 </div>
-                <div class="thumb2">
-                    <img src="assets/img/home-3/thumb2.png" alt="img" class="w-100">
-                </div>
-                <div class="thumb3">
-                    <img src="assets/img/home-3/thumb3.png" alt="img" class="w-100">
-                </div>
-            </div>
-            <h1 class="hero-title">Building Your Branding</h1>
-            <div class="hero-content-footer">
-                <img src="assets/img/home-3/hero-tumber.png" alt="img">
-                <div class="thumb">
-                    <img src="assets/img/home-3/thumb4.png" alt="img">
-                </div>
-                <div class="cont">
-                    <p>Benax is the first and only branding studio for your real exploration.</p>
-                    <a href="#0" class="arrow">
-                        <i class="fas fa-arrow-right"></i>
-                    </a>
+                <h1 class="hero-title gallery-font">Building Your <br> Branding</h1>
+                <div class="hero-content-footer">
+                    <img src="assets/img/home-3/hero-tumber.png" alt="img" class="tumber d-sm-block d-none">
+                    <div class="thumb d-sm-block d-none">
+                        <img src="assets/img/home-3/thumb4.png" alt="img" class="w-100">
+                    </div>
+                    <div class="cont">
+                        <p>Benax is the first and only branding studio for your real exploration.</p>
+                        <a href="#0" class="arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
