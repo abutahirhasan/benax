@@ -334,6 +334,43 @@
 					},
 				});
 			}
+			//>> business-slide-wrap Start <<//
+			if ($(".business-slide-wrap03").length > 0) {
+				const businessSlideWrap = new Swiper(".business-slide-wrap03", {
+					spaceBetween: 20,
+					speed: 1300,
+					loop: true,
+					centeredSlides: false,
+					autoplay: {
+						delay: 2000,
+						disableOnInteraction: false,
+					},
+					pagination: {
+						el: ".cus-swiper-pagination3",
+						clickable: true,
+					},
+					breakpoints: {
+						1399: {
+							slidesPerView: 4,
+						},
+						1199: {
+							slidesPerView: 3.5,
+						},
+						991: {
+							slidesPerView: 2.8,
+						},
+						767: {
+							slidesPerView: 2.3,
+						},
+						575: {
+							slidesPerView: 1.4,
+						},
+						0: {
+							slidesPerView: 1,
+						},
+					},
+				});
+			}
 
 			//New Slide add benax
 			//>> Testimonial Slider Start <<//

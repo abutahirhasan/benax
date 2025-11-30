@@ -10761,4 +10761,173 @@ span {
   .sponsor-shop-wrap1 .sponsor-shop-item img {
     max-width: 70px;
   }
+}
+
+.business-card-section03 .business-card-top03 {
+  display: flex;
+  justify-content: space-between;
+}
+.business-card-section03 .business-card-top03 .business-title3 {
+  font-size: 200px;
+  line-height: 200px;
+  color: var(--black);
+}
+.business-card-section03 .business-slide-wrap03 {
+  width: 88%;
+  padding: 0 14px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style1 {
+  margin: 120px 15px 20px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 {
+  padding: 0;
+  background-color: transparent;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03.style1 {
+  transform: rotate(3.5deg) !important;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03.style2 {
+  transform: rotate(-3.5deg) !important;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .card-profile {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 16px 28px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .card-profile h4 {
+  font-size: 18px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .card-profile p {
+  color: #717171;
+  margin: 0;
+  font-size: 16px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .card-profile .text-great {
+  font-size: 14px;
+  color: #717171;
+  text-transform: uppercase;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body {
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 32px 30px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body .ratting {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 14px;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body .ratting i {
+  color: #ff8000;
+}
+.business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body p {
+  color: #5c5c5c;
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 118px;
+}
+@media screen and (max-width: 1850px) {
+  .business-card-section03 .business-slide-wrap03 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1600px) {
+  .business-card-section03 .business-slide-wrap03 {
+    width: 100%;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style1 {
+    margin: 80px 15px 20px;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style03 .card-profile {
+    padding: 16px 20px;
+    display: flex;
+    gap: 13px;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body {
+    padding: 24px 20px;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body p {
+    line-height: 26px;
+    padding-bottom: 40px !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .business-card-section03 .business-slide-wrap03 {
+    width: 100%;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style1 {
+    margin: 80px 15px 20px;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style03 .card-profile {
+    padding: 16px 20px;
+    display: flex;
+    gap: 13px;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body {
+    padding: 24px 20px;
+  }
+  .business-card-section03 .business-slide-wrap03 .business-item-style03 .business-card-body p {
+    line-height: 26px;
+    padding-bottom: 10px !important;
+    margin-bottom: 0;
+  }
+  .business-card-section03 .business-card-top03 .business-title3 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 1199px) {
+  .business-card-section03 .business-slide-wrap03 .business-item-style1 {
+    margin: 50px 15px 20px;
+  }
+  .business-card-section03 .business-card-top03 .business-title3 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+@media (max-width: 991px) {
+  .business-card-section03 .business-slide-wrap03 .business-item-style1 {
+    margin: 40px 15px 20px;
+  }
+  .business-card-section03 .business-card-top03 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .business-card-section03 .business-card-top03 .business-title3 {
+    font-size: 70px;
+    line-height: 70px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .business-card-section03 .business-card-top03 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .business-card-section03 .business-card-top03 .business-title3 {
+    font-size: 40px;
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .business-card-section03 .business-card-top03 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+  }
+  .business-card-section03 .business-card-top03 .business-title3 {
+    font-size: 34px;
+    line-height: 34px;
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
