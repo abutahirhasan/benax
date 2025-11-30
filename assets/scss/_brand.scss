@@ -1,0 +1,17 @@
+//shop-sponsor-section3
+.shop-sponsor-section3 {
+	padding: 290px 0 230px;
+	@media screen and (max-width: 1600px) {
+		padding: 220px 0 190px;
+	}
+	@include breakpoint(max-xxl) {
+		padding: 170px 0 120px;
+	}
+	@include breakpoint(max-lg) {
+		padding: 90px 0 90px;
+	}
+	@include breakpoint(max-md) {
+		padding: 70px 0 90px;
+	}
+}
+//shop-sponsor-section3

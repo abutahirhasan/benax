@@ -1327,3 +1327,344 @@
 	}
 }
 //article-section02
+
+//article-section03
+.article-section03 {
+	.article-title3 {
+		font-size: 66px;
+		line-height: 76px;
+		text-transform: uppercase;
+		margin-bottom: 120px;
+		.secound {
+			padding-left: 172px;
+		}
+	}
+	.article-inner3 {
+		display: flex;
+		flex-direction: column;
+		gap: 78px;
+		.article__item3 {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px 24px;
+			.profile-area {
+				.learning-tag {
+					font-size: 14px;
+					line-height: 14px;
+					color: $black;
+					text-transform: uppercase;
+					border-radius: 4px;
+					padding: 8px 15px;
+					border: 1px solid #d9d9d9;
+					display: inline-block;
+					margin-bottom: 75px;
+				}
+				.profile {
+					gap: 10px;
+					h5 {
+						font-size: 18px;
+						color: $black;
+						margin-bottom: 6px;
+					}
+					.date {
+						font-size: 13px;
+						color: #717171;
+						line-height: 14px;
+					}
+				}
+			}
+			.article-content-right {
+				gap: 18px 124px;
+				display: flex;
+				align-items: center;
+				.thumb {
+					max-width: 391px;
+					border-radius: 12px;
+					img {
+						border-radius: 12px;
+						width: 100%;
+						transition: all 0.4s;
+					}
+				}
+				.title {
+					max-width: 494px;
+					color: $black;
+					font-size: 36px;
+					line-height: 46px;
+					margin: 0;
+					display: block;
+				}
+			}
+			&:hover {
+				.article-content-right {
+					.thumb {
+						img {
+							transform: scale(1.05);
+						}
+					}
+					.title {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.article-title3 {
+			font-size: 46px;
+			line-height: 66px;
+			margin-bottom: 80px;
+			.secound {
+				padding-left: 120px;
+			}
+		}
+		.article-inner3 {
+			gap: 60px;
+			.article__item3 {
+				gap: 20px 24px;
+				.profile-area {
+					.learning-tag {
+						font-size: 14px;
+						line-height: 14px;
+						padding: 8px 15px;
+						display: inline-block;
+						margin-bottom: 30px;
+					}
+					.profile {
+						gap: 10px;
+						h5 {
+							font-size: 18px;
+							margin-bottom: 6px;
+						}
+						.date {
+							font-size: 13px;
+						}
+					}
+				}
+				.article-content-right {
+					gap: 18px 30px;
+					display: flex;
+					align-items: center;
+					.thumb {
+						max-width: 391px;
+					}
+					.title {
+						max-width: 494px;
+						font-size: 36px;
+						line-height: 46px;
+						margin: 0;
+						display: block;
+					}
+				}
+				&:hover {
+					.article-content-right {
+						.thumb {
+							img {
+								transform: scale(1.05);
+							}
+						}
+						.title {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.article-title3 {
+			font-size: 34px;
+			line-height: 44px;
+			margin-bottom: 40px;
+			span{
+				font-size: 34px;
+			}
+			.secound {
+				padding-left: 70px;
+			}
+		}
+		.article-inner3 {
+			gap: 60px;
+			.article__item3 {
+				gap: 20px 24px;
+				.profile-area {
+					.learning-tag {
+						font-size: 14px;
+						line-height: 14px;
+						padding: 8px 15px;
+						display: inline-block;
+						margin-bottom: 30px;
+					}
+					.profile {
+						gap: 10px;
+						h5 {
+							font-size: 18px;
+							margin-bottom: 6px;
+						}
+						.date {
+							font-size: 13px;
+						}
+					}
+				}
+				.article-content-right {
+					gap: 18px 30px;
+					display: flex;
+					align-items: center;
+					.thumb {
+						max-width: 391px;
+					}
+					.title {
+						max-width: 494px;
+						font-size: 36px;
+						line-height: 46px;
+						margin: 0;
+						display: block;
+					}
+				}
+				&:hover {
+					.article-content-right {
+						.thumb {
+							img {
+								transform: scale(1.05);
+							}
+						}
+						.title {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-lg) {
+		.article-title3 {
+			font-size: 29px;
+			line-height: 39px;
+			margin-bottom: 29px;
+			text-align: center;
+			max-width: 400px;
+			margin: 0 auto 29px;
+			span{
+				font-size: 29px;
+			}
+			.secound {
+				padding-left: 0px;
+			}
+		}
+		.article-inner3 {
+			gap: 40px;
+			.article__item3 {
+				gap: 18px 24px;
+				flex-direction: column;
+				align-items: flex-start;
+				.profile-area {
+					.learning-tag {
+						font-size: 14px;
+						line-height: 14px;
+						padding: 8px 15px;
+						display: inline-block;
+						margin-bottom: 30px;
+					}
+					.profile {
+						gap: 10px;
+						h5 {
+							font-size: 18px;
+							margin-bottom: 6px;
+						}
+						.date {
+							font-size: 13px;
+						}
+					}
+				}
+				.article-content-right {
+					gap: 18px 24px;
+					display: flex;
+					.thumb {
+						max-width: 391px;
+					}
+					.title {
+						max-width: 494px;
+						font-size: 28px;
+						line-height: 40px;
+						margin: 0;
+						display: block;
+					}
+				}
+				&:hover {
+					.article-content-right {
+						.thumb {
+							img {
+								transform: scale(1.05);
+							}
+						}
+						.title {
+							color: $theme-color;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.article-title3 {
+			font-size: 29px;
+			line-height: 39px;
+			margin-bottom: 29px;
+			text-align: center;
+			max-width: 400px;
+			margin: 0 auto 29px;
+			span{
+				font-size: 29px;
+			}
+			.secound {
+				padding-left: 0px;
+			}
+		}
+		.article-inner3 {
+			gap: 36px;
+			.article__item3 {
+				gap: 18px 24px;
+				flex-direction: column;
+				align-items: flex-start;
+				.profile-area {
+					order: 1;
+					.learning-tag {
+						font-size: 14px;
+						line-height: 14px;
+						padding: 8px 15px;
+						display: inline-block;
+						margin-bottom: 30px;
+					}
+					.profile {
+						gap: 10px;
+						h5 {
+							font-size: 18px;
+							margin-bottom: 6px;
+						}
+						.date {
+							font-size: 13px;
+						}
+					}
+				}
+				.article-content-right {
+					gap: 18px 24px;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					.thumb {
+						max-width: 391px;
+					}
+					.title {
+						max-width: 494px;
+						font-size: 20px;
+						line-height: 30px;
+						margin: 0;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+//article-section03
